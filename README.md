@@ -1,2 +1,0 @@
-# Next-course
-next course
