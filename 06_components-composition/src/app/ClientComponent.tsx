@@ -1,3 +1,14 @@
-export default function ClientComponent() {
-  return <div></div>
+'use client'
+import Container from './Container'
+
+export default function ClientComponent({
+  content,
+}: {
+  content: React.ReactNode
+}) {
+  return (
+    <div className='p-4'>
+      <Container>{content}</Container>
+    </div>
+  )
 }

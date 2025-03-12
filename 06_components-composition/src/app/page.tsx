@@ -1,9 +1,6 @@
 import ClientComponent from './ClientComponent'
+import ServerComponent from './ServerComponent'
 
-export default function Home() {
-  return (
-    <main className='mt-5 max-w-xl mx-auto'>
-      <ClientComponent />
-    </main>
-  )
+export default function Page() {
+  return <ClientComponent content={<ServerComponent />} />
 }
