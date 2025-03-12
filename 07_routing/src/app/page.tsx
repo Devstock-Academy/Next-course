@@ -1,7 +1,13 @@
-export default function Home() {
+export default function Home({
+  searchParams,
+}: {
+  searchParams: Record<string, string | string[]>
+}) {
   return (
-    <main className='container'>
-      <h1 className='title'>Home page</h1>
+    <main>
+      <h1>Homepage</h1>
+      <h2>Search Params:</h2>
+      <pre>{JSON.stringify(searchParams, null, 2)}</pre>
     </main>
   )
 }
